@@ -1,0 +1,9 @@
+.butn {
+    border: none;
+    background: transparent;
+}
+
+.scrol {
+    overflow: auto;
+    height: 33vh;
+}
