@@ -31,6 +31,10 @@ function App() {
           <Route exact path="/home">
             {logged ? <Expense /> : <Redirect to="/login" />}
           </Route>
+
+          <Route path="*">
+            {logged ? <Redirect to="/home" /> : <Redirect to="/login" />}
+          </Route>
         </Switch>
         <Footer />
       </newContext.Provider>
