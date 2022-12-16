@@ -39,7 +39,7 @@ const Form = () => {
 
 
             const token = localStorage.getItem('token');
-            const data = await axios.post("https://expensetrackerback.herokuapp.com/transaction/update", { transc, token });
+            const data = await axios.post("https://expensetrackerback.onrender.com/transaction/update", { transc, token });
 
             if (data.status === 200) {
                 console.log("Transaction Noted");
@@ -63,7 +63,7 @@ const Form = () => {
 
         try {
             const token = localStorage.getItem('token')
-            const result = await axios.get("https://expensetrackerback.herokuapp.com/transaction/request", {
+            const result = await axios.get("https://expensetrackerback.onrender.com/transaction/request", {
                 headers: {
                     "authorization": token
                 }
