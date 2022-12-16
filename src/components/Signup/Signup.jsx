@@ -20,7 +20,7 @@ const Signup = () => {
     const postData = async (e) => {
         e.preventDefault();
         try {
-            const result = await axios.post("https://expensetrackerback.herokuapp.com/signup", getData);
+            const result = await axios.post("https://expensetrackerback.onrender.com/signup", getData);
 
             if (result) {
 
