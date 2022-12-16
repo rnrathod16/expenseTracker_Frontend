@@ -36,7 +36,7 @@ const List = () => {
         const idx = { id: idn };
         // console.log(idx);
         const token = localStorage.getItem('token')
-        const result = await axios.post("https://expensetrackerback.herokuapp.com/transaction/delete", { idx, token });
+        const result = await axios.post("https://expensetrackerback.onrender.com/transaction/delete", { idx, token });
 
         if (result) {
             setCount(50);
