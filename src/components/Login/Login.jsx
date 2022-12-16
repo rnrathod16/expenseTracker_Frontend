@@ -29,7 +29,7 @@ const Login = () => {
         const { username, password } = log;
         try {
 
-            const result = await axios.post("https://expensetrackerback.herokuapp.com/login", { username, password });
+            const result = await axios.post("https://expensetrackerback.onrender.com/login", { username, password });
 
             if (result) {
 
@@ -62,7 +62,7 @@ const Login = () => {
         const password = '1234';
         try {
 
-            const result = await axios.post("https://expensetrackerback.herokuapp.com/login", { username, password });
+            const result = await axios.post("https://expensetrackerback.onrender.com/login", { username, password });
 
             if (result) {
 
